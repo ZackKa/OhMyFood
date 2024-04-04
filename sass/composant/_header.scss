@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &__logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        box-shadow: 0 0 10px grey;
+        z-index: 1;
+        background-color: white;
+        img{
+            margin: 30px 0;
+            width: 50%;
+        }
+    }
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 15px 0px grey;
+        background: $color-background-header;
+        height: 50px;
+        p{
+            margin-left: 25%;
+            i{
+                margin-right: 5px; 
+            }
+        }
+        input{
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            background: $color-background-header;
+        }
+    }
+}
