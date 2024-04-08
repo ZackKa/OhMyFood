@@ -3,7 +3,31 @@
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 35px 20px;
+    @media only screen and (min-width: 1024px) {
+        padding: 35px 90px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        padding: 35px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
     &__title{
         padding: 10px 0px;
+    }
+    &__content{
+        @media only screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
     }
 }

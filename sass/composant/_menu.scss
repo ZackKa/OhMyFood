@@ -1,0 +1,64 @@
+.superposition{
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    @media only screen and (min-width: 1024px) {
+        top: 295px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        top: 315px;
+    }
+    .menu{
+        padding: 20px 10px;
+        background: $color-background-main;
+        border-radius: 25px 25px 0 0;
+        @media only screen and (min-width: 1024px) {
+            margin: 0px 100px;
+            padding: 50px 150px;
+        }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            padding: 20px 50px;
+        }
+        &__title{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
+            @media only screen and (min-width: 1024px) {
+                justify-content: center;
+            }
+        }
+        h1{
+        font-family: "Shrikhand", serif;
+        font-size: 24px;
+        font-weight: 300;
+        }
+        i{
+            font-size: 22px;
+            @media only screen and (min-width: 1024px) {
+                margin-left: 20px;
+            }
+        }
+        &__button{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            button{
+                border: none;
+                background: linear-gradient(0deg, #9356DC 0%, #FF79DA 70%);
+                padding: 18px 50px;
+                border-radius: 50px;
+                box-shadow: 0px 10px 25px rgba(0,0,0,.2);
+                color: #fff;
+                font-size: 18px;
+            }
+            button:hover{
+                opacity: 0.9;
+                box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

@@ -4,4 +4,25 @@
     flex-wrap: nowrap;
     padding: 45px 20px;
     background: $color-background-main;
+    @media only screen and (min-width: 1024px) {
+        padding: 45px 90px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &__content{
+        @media only screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            width: 70%;
+        }
+    }
 }

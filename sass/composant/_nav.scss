@@ -7,24 +7,33 @@ nav{
     padding: 30px 19px 50px 19px;
     background: $color-background-main;
     h1{
-        margin: 0px 0px 15px 0px;
+        margin-bottom: 15px;
+        @media only screen and (min-width: 1024px) {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
     }
     p{
-        margin: 0px 0px 20px 0px;
+        margin-bottom: 20px;
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: 25px;
+        }
     }
-    button{
-        border: none;
-        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 70%);
-        padding: 18px;
-        border-radius: 50px;
-        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    .button{
+        margin-top: 20px;
         a{
             text-decoration-line: none;
             color: white;
+            border: none;
+            background: linear-gradient(0deg, #9356DC 0%, #FF79DA 70%);
+            padding: 18px;
+            border-radius: 50px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,.2);
+            margin: 0px 0px 20px 0px;
         }
-    }
-    button:hover{
-        opacity: 0.9;
-        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+        a:hover{
+            opacity: 0.9;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+        }
     }
 }

@@ -1,0 +1,33 @@
+.menu__content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 20px 0;
+    h2{
+        font-weight: 100;
+        font-size: 18px;
+    }
+    .line{
+        border: 1px solid $color-tertiary;
+        width: 12%;
+    }
+    &__description{
+        width: 100%;
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            background: white;
+            margin: 15px 0;
+            padding: 20px 15px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            .bold{
+                font-weight: 700;
+            }
+        }
+    }
+}
