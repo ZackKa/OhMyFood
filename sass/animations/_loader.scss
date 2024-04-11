@@ -4,21 +4,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: chargement 0s 2s both;
+    animation: chargement 0.5s 2s both;
     position: fixed;
     background-color: white;
+    .charge .loader {
+        border: 16px solid $color-primary;
+        border-top: 16px solid $color-secondary;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        animation: loader 2s linear infinite;
+    }
+    .foodcharge {
+        position: absolute;
+        display: flex;
+        img{
+            width: 200px;
+        }
+        
+        
+    }
 }
-
-.chargement .charge .loader {
-    border: 16px solid $color-primary;
-    border-top: 16px solid $color-secondary;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    animation: loader 2s linear infinite;
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
-}
-
 @keyframes loader {
     from { 
         transform: rotate(0deg);
@@ -28,15 +34,6 @@
     }
 }
 
-.chargement .foodcharge {
-    position: absolute;
-    display: flex;
-    img{
-        width: 200px;
-    }
-    
-    
-}
 
 @keyframes chargement{
     0%{

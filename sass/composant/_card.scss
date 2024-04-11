@@ -1,6 +1,6 @@
 .card {
     background: white;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 15px 0;
     @media only screen and (min-width: 1024px) {
         width: 45%;
@@ -18,7 +18,7 @@
         width: 100%;
         object-fit: cover;
         height: 160px;
-        border-radius: 25px 25px 0 0;
+        border-radius: 20px 20px 0 0;
         }
         p{
             position: absolute;
@@ -40,7 +40,6 @@
         height: 65px;
         padding: 0 10px;
         align-items: center;
-
         span {
             font-weight: bold;
         }
