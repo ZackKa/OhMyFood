@@ -13,13 +13,17 @@
     }
     &__number{
         position: absolute;
-        left: -11px;
+        left: -15px;
         p{
             background: $color-primary;
             border-radius: 50%;
-            padding: 8px;
-            font-size: 11px;
-            color: white;
+            font-size: 13px;
+            color: #fff;
+            width: 29px;
+            height: 29px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     &__icon{
